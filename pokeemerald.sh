@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Updating your system as a precaution, please wait..."
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 echo "Installing dependencies, please wait..."
 sudo apt install build-essential binutils-arm-none-eabi git libpng-dev
 echo "Cloning repositories, please wait..."
